@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/articles');
+        const response = await fetch('https://readify-l3j5.onrender.com/api/articles');
         if (!response.ok) {
           throw new Error('Failed to fetch articles');
         }

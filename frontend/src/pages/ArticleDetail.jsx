@@ -15,7 +15,7 @@ const ArticleDetail = () => {
     useEffect(() => {
         const fetchArticle = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/api/articles/${id}`);
+                const response = await fetch(`https://readify-l3j5.onrender.com/api/articles/${id}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch article');
                 }
